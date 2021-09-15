@@ -85,7 +85,6 @@ export default {
       .then((response) => {
         this.mainData = response.data;
         this.pets = response.data.data.content.pets;
-        console.log(this.pets);
       })
       .catch((e) => {
         this.error = e;
